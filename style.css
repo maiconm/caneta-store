@@ -41,3 +41,18 @@ nav ul {
 }
 
 li {padding-left: 5vw}
+
+footer {
+  justify-content: flex;
+  height: 100%;
+  display: flex;
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+}
+
+footer a {
+  color: white;
+}
