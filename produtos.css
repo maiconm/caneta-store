@@ -1,0 +1,19 @@
+.pricing {
+  place-content: center;
+  grid-auto-flow: dense;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.card li {padding: 0}
