@@ -10,6 +10,8 @@ const USER_VALUES_CLASSES = {
     name: 'Você',
 }
 
+let canRespond = true
+
 const chatMessages = []
 
 const getUserInput = () => (document.getElementsByTagName('input')[0])
@@ -51,17 +53,47 @@ const botWelcomeMessage = () => {
 }
 
 const renderMessage = (from, ...messages) => {
-    messages.forEach(message => {
-        createBubbleMessages(from, message)
-    })
+    messages.forEach(message => createBubbleMessages(from, message))
 }
 
 const sendMessage = () => {
     const userInput = getUserInput()
-    userInput.value.trim() && renderMessage(USER_VALUES_CLASSES, userInput.value)
+    if (userInput.value.trim()) {
+        renderMessage(USER_VALUES_CLASSES, userInput.value)
+        canRespond && waitBotResponse(userInput.value)
+    }
 }
 
 const changeBotStatus = (status) => {
     const statusElement = document.getElementsByClassName('status')[0]
     statusElement.innerText = status
+}
+
+const waitBotResponse = (message) => {
+    changeBotStatus('digitando')
+    setTimeout(() => {
+        try {
+            const response = handleMessage(message)
+            renderMessage(BOT_VALUES_CLASSES, response)
+            changeBotStatus('offline')
+        } catch (responseError) {
+            renderMessage(BOT_VALUES_CLASSES, responseError)
+            changeBotStatus('online')
+        }
+    }, 1000)
+}
+
+const handleMessage = (message) => {
+    const isEmail = validateEmail(message)
+    if (isEmail) {
+        canRespond = false
+        return 'Obrigado, entraremos em contato em breve!'
+    } else {
+        throw 'nao entendi'
+    }
+}
+
+const validateEmail = (email) => {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }
