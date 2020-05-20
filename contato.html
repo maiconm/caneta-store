@@ -20,9 +20,10 @@
         type="text/css"
         href="contato.css"
     >
+    <script defer src="chat.js"></script>
     <title>Caneta Store - imagens</title>
 </head>
-<body>
+<body onload="botWelcomeMessage()">
     <div class="page-wrapper">
         <header>
             <img
@@ -62,22 +63,30 @@
         </header>
         <div class="chat">
             <div class="input-text">
-                <form action="">
-                    <input type="text" required>
-                    <button><em class="fa fa-paper-plane"></em></button>
+                <form action="#">
+                    <input
+                        type="text"
+                        required
+                        maxlength="50"
+                    >
+                    <button onclick="sendMessage()">
+                        <em class="fa fa-paper-plane"></em>
+                    </button>
                 </form>
             </div>
             <div class="is-typing">...</div>
-            <div class="msg msg-bot">
-                <div class="bubble color-bot">
-                    <div class="name">caneta store</div>
-                    <div class="text">xD</div>
+            <div class="messages">
+                <div class="msg msg-bot">
+                    <div class="bubble color-bot">
+                        <div class="name">caneta store</div>
+                        <div class="text">xD</div>
+                    </div>
                 </div>
-            </div>
-            <div class="msg msg-user">
-                <div class="bubble color-user">
-                    <div class="name">você</div>
-                    <div class="text">ggggrrrrrh!!</div>
+                <div class="msg msg-user">
+                    <div class="bubble color-user">
+                        <div class="name">você</div>
+                        <div class="text">ggggrrrrrh!!</div>
+                    </div>
                 </div>
             </div>
         </div>
