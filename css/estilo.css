@@ -86,3 +86,27 @@ footer a {
 }
 
 em {text-align: end}
+
+@media only screen and (max-width: 430px) {
+  .page-wrapper {
+    height: 100%;
+    padding-top: 130px;
+  }
+
+  header {
+    align-items: center;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  header img {margin: 5px 0 0 0}
+
+  nav ul {flex-direction: column}
+
+  .features {
+    max-width: 400px;
+    width: 90%;
+  }
+}

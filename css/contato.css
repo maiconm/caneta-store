@@ -56,3 +56,6 @@ input {
     border-radius: 3px;
 }
 
+.name {
+    font-weight: 900;
+}
