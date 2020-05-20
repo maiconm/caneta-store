@@ -41,11 +41,11 @@ const createBubbleMessages = (from, message) => {
 }
 
 const botWelcomeMessage = () => {
-    ['ola', 'deixe seu email para entrarmos em contato!'].forEach(message => {
-        changeBotStatus('digitando')
+    ['Olá', 'deixe seu email para entrarmos em contato!'].forEach(message => {
+        changeBotStatus('💬 digitando...')
         setTimeout(() => {
             renderMessage(BOT_VALUES_CLASSES, message)
-            changeBotStatus('online')
+            changeBotStatus('🔵 online')
         }, 1500)
     })
 }
@@ -69,15 +69,15 @@ const changeBotStatus = (status) => {
 }
 
 const waitBotResponse = (message) => {
-    changeBotStatus('digitando')
+    changeBotStatus('💬 digitando...')
     setTimeout(() => {
         try {
             const response = handleMessage(message)
             renderMessage(BOT_VALUES_CLASSES, response)
-            changeBotStatus('offline')
+            changeBotStatus('🔴 offline')
         } catch (responseError) {
             renderMessage(BOT_VALUES_CLASSES, responseError)
-            changeBotStatus('online')
+            changeBotStatus('🔵 online')
         }
     }, 1000)
 }
@@ -86,9 +86,9 @@ const handleMessage = (message) => {
     const isEmail = validateEmail(message)
     if (isEmail) {
         canRespond = false
-        return 'Obrigado, entraremos em contato em breve!'
+        return 'Obrigado, entraremos em contato em breve! 🙋'
     } else {
-        throw 'nao entendi'
+        throw 'não entendi 🤔'
     }
 }
 
