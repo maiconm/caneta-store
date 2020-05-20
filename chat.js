@@ -12,8 +12,6 @@ const USER_VALUES_CLASSES = {
 
 let canRespond = true
 
-const chatMessages = []
-
 const getUserInput = () => (document.getElementsByTagName('input')[0])
 const getChat = () => (document.getElementsByClassName('messages')[0])
 const createDiv = () => document.createElement('div')
@@ -61,6 +59,7 @@ const sendMessage = () => {
     if (userInput.value.trim()) {
         renderMessage(USER_VALUES_CLASSES, userInput.value)
         canRespond && waitBotResponse(userInput.value)
+        userInput.value = ''
     }
 }
 
@@ -94,6 +93,6 @@ const handleMessage = (message) => {
 }
 
 const validateEmail = (email) => {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    return re.test(email.toLowerCase())
 }

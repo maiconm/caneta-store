@@ -63,13 +63,14 @@
         </header>
         <div class="chat">
             <div class="input-text">
-                <form action="#">
+                <form onsubmit="return false">
                     <input
                         type="text"
-                        required
                         maxlength="50"
                     >
-                    <button onclick="sendMessage()">
+                    <button
+                        type="submit"
+                        onclick="sendMessage()">
                         <em class="fa fa-paper-plane"></em>
                     </button>
                 </form>
