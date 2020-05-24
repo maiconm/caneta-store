@@ -1,91 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-    />  
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="css/estilo.css"
-    >
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="css/contato.css"
-    >
-    <script defer src="js/contato.js"></script>
-    <title>Caneta Store - imagens</title>
+  <meta charset="UTF-8">
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+  />  
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="css/estilo.css"
+  >
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="css/contato.css"
+  >
+  <script defer src="js/contato.js"></script>
+  <title>Caneta Store - imagens</title>
 </head>
 <body onload="botWelcomeMessage()">
-    <div class="page-wrapper">
-        <header>
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yws46KFbH83peqnTL2TFBCgqOx4YfwZ6mCmfQ1AyFTuBMcWS8g"
-                alt="pen image"
-                width="200px"
+  <div class="page-wrapper">
+    <header>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yws46KFbH83peqnTL2TFBCgqOx4YfwZ6mCmfQ1AyFTuBMcWS8g"
+        alt="pen image"
+        width="200px"
+      >
+      <nav>
+        <ul>
+          <li>
+            <a
+              class="nav-link"
+              href="index.html"
             >
-            <nav>
-                <ul>
-                    <li>
-                        <a
-                            class="nav-link"
-                            href="index.html"
-                        >
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            class="nav-link"
-                            href="produtos.html"
-                        >
-                            Produtos
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            class="nav-link"
-                            href="imagens.html"
-                        >
-                            Imagens
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="chat">
-            <div class="input-text">
-                <form onsubmit="return false">
-                    <input
-                        type="text"
-                        maxlength="50"
-                    >
-                    <button
-                        type="submit"
-                        onclick="sendMessage()">
-                        <em class="fa fa-paper-plane"></em>
-                    </button>
-                </form>
-            </div>
-            <div class="status"><!-- status (online, digitando, offline) --></div>
-            <div class="messages">
-                <!-- as mensagens aparecerao aqui! -->
-            </div>
-        </div>
-        <footer>
-            <p>
-                Desenvolvido por: 
-                <a href="https://github.com/maiconm"> Maicon Andraski</a>
-                - 2020
-            </p>
-        </footer>
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="produtos.html"
+            >
+              Produtos
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="imagens.html"
+            >
+              Imagens
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="chat">
+      <div class="input-text">
+        <form onsubmit="return false">
+          <input
+            type="text"
+            maxlength="50"
+          >
+          <button
+            type="submit"
+            onclick="sendMessage()"
+          >
+            <em class="fa fa-paper-plane"></em>
+          </button>
+        </form>
+      </div>
+      <div class="status">
+        <!-- status (online, digitando, offline) -->
+      </div>
+      <div class="messages">
+        <!-- as mensagens aparecerao aqui! -->
+      </div>
     </div>
+    <footer>
+      <p>
+        Desenvolvido por: 
+        <a href="https://github.com/maiconm"> Maicon Andraski</a>
+        - 2020
+      </p>
+    </footer>
+  </div>
 </body>
 </html>

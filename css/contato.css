@@ -1,18 +1,18 @@
 .chat {
-    overflow: scroll;
-    display: flex;
-    flex-direction: column-reverse;
-    align-self: flex-end;
-    width: 40vw;
-    min-width: 400px;
-    height: 80vh;
-    background-color: antiquewhite;
-    padding: 10px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+  align-self: flex-end;
+  width: 40vw;
+  min-width: 400px;
+  height: 80vh;
+  background-color: antiquewhite;
+  padding: 10px;
 }
 
 .msg {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .msg-bot {align-items: flex-start}
@@ -20,42 +20,42 @@
 .msg-user {align-items: flex-end}
 
 .color-user {
-    background-color: rgb(136, 182, 93);
-    border: 2px solid rgb(136, 182, 93);
+  background-color: rgb(136, 182, 93);
+  border: 2px solid rgb(136, 182, 93);
 }
 
 .color-bot {
-    background-color: rgb(93, 157, 182);
-    border: 2px solid rgb(93, 157, 182);
+  background-color: rgb(93, 157, 182);
+  border: 2px solid rgb(93, 157, 182);
 }
 
 .bubble {
-    border-radius: 7.5px;
-    padding: 3px 7px;
-    margin: 3px 0;
-    max-width: 280px;
-    overflow: hidden;
+  border-radius: 7.5px;
+  padding: 3px 7px;
+  margin: 3px 0;
+  max-width: 280px;
+  overflow: hidden;
 }
 
 .messages {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-text {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 button {
-    width: 8%;
-    border-radius: 7px;
+  width: 8%;
+  border-radius: 7px;
 }
 
 input {
-    width: 90%;
-    border-radius: 3px;
+  width: 90%;
+  border-radius: 3px;
 }
 
 .name {
-    font-weight: 900;
+  font-weight: 900;
 }
