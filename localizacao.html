@@ -20,6 +20,7 @@
     type="text/css"
     href="css/produtos.css"
   >
+  <script defer src="js/navbar.js"></script>
   <title>Caneta Store - produtos</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
         alt="pen image"
         width="200px"
       >
-      <nav>
+      <nav id="links">
         <ul>
           <li>
             <a
@@ -66,6 +67,12 @@
           </li>
         </ul>
       </nav>
+      <a
+        href="javascript:void(0);"
+        class="icon" onclick="toggleMenu()"
+      >
+        <em class="fa fa-bars fa-3x"></em>
+      </a>
     </header>
     <h1>Localização</h1>
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.4734001902!2d-0.2416812458089657!3d51.528558241602255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondres%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1594330222563!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

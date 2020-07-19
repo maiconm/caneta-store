@@ -15,6 +15,10 @@ body {
   padding-top: 100px;
 }
 
+header a.icon {
+  display: none;
+}
+
 header {
   top: 0;
   left: 0;
@@ -94,14 +98,30 @@ em {text-align: end}
   }
 
   header {
-    align-items: center;
+    overflow: hidden;
     padding: 0;
     flex-direction: column;
     text-align: center;
     width: 100%;
   }
 
-  header img {margin: 5px 0 0 0}
+  header a.icon {
+    color: grey;
+    margin: 5px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header img {
+    margin: 5px;
+    display: block;
+  }
 
   nav ul {flex-direction: column}
 

@@ -20,6 +20,7 @@
     type="text/css"
     href="css/produtos.css"
   >
+  <script defer src="js/navbar.js"></script>
   <title>Caneta Store - produtos</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
         alt="pen image"
         width="200px"
       >
-      <nav>
+      <nav id="links">
         <ul>
           <li>
             <a
@@ -66,6 +67,12 @@
           </li>
         </ul>
       </nav>
+      <a
+        href="javascript:void(0);"
+        class="icon" onclick="toggleMenu()"
+      >
+        <em class="fa fa-bars fa-3x"></em>
+      </a>
     </header>
     <h1>Planos</h1>
     <div class="pricing">
