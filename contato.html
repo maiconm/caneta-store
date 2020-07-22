@@ -20,6 +20,7 @@
     type="text/css"
     href="css/contato.css"
   >
+  <script defer src="js/navbar.js"></script>
   <script defer src="js/contato.js"></script>
   <title>Caneta Store - imagens</title>
 </head>
@@ -31,7 +32,7 @@
         alt="pen svg"
         width="200px"
       >
-      <nav>
+      <nav id="links">
         <ul>
           <li>
             <a
@@ -67,6 +68,12 @@
           </li>
         </ul>
       </nav>
+      <a
+        href="javascript:void(0);"
+        class="icon" onclick="toggleMenu()"
+      >
+        <em class="fa fa-bars fa-3x"></em>
+      </a>
     </header>
     <div class="chat">
       <div class="input-text">
