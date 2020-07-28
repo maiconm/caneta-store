@@ -65,6 +65,28 @@ footer a {
   color: white;
 }
 
+.slider{
+  width: 80%;
+  height: 500px;
+  background-image: url('../img/caneta3.jpg');
+  background-size: cover;
+  font-size: 35px;
+  color: #333;
+}
+
+.fa-chevron-left{
+  margin-top: 200px;
+  margin-left: 2%;
+  opacity: 0.3;
+}
+
+.fa-chevron-right{
+  float: right;
+  margin-top: 200px;
+  margin-right: 2%;
+  opacity: 0.3;
+}
+
 .features {
   gap: 30px;
   box-sizing: border-box;
@@ -121,6 +143,28 @@ em {text-align: end}
     margin: 5px;
     display: block;
   }
+
+  .slider{
+    width: 80%;
+    height: 200px;
+    background-image: url('../img/caneta3.jpg');
+    background-size: cover;
+    font-size: 35px;
+    color: #333;
+  }
+
+  .fa-chevron-left{
+    margin-top: 85px;
+    margin-left: 2%;
+    opacity: 0.3;
+  }
+  
+  .fa-chevron-right{
+    float: right;
+    margin-top: 85px;
+    margin-right: 2%;
+    opacity: 0.3;
+  }  
 
   nav ul {flex-direction: column}
 
