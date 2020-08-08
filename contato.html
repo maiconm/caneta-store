@@ -20,6 +20,7 @@
     type="text/css"
     href="css/contato.css"
   >
+  <script defer src="js/navbar.js"></script>
   <script defer src="js/contato.js"></script>
   <title>Caneta Store - imagens</title>
 </head>
@@ -27,11 +28,11 @@
   <div class="page-wrapper">
     <header>
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yws46KFbH83peqnTL2TFBCgqOx4YfwZ6mCmfQ1AyFTuBMcWS8g"
-        alt="pen image"
+        src="assets/fountain-pen.svg"
+        alt="pen svg"
         width="200px"
       >
-      <nav>
+      <nav id="links">
         <ul>
           <li>
             <a
@@ -57,8 +58,22 @@
               Imagens
             </a>
           </li>
+          <li>
+            <a
+              class="nav-link"
+              href="localizacao.html"
+            >
+              Localização
+            </a>
+          </li>
         </ul>
       </nav>
+      <a
+        href="javascript:void(0);"
+        class="icon" onclick="toggleMenu()"
+      >
+        <em class="fa fa-bars fa-3x"></em>
+      </a>
     </header>
     <div class="chat">
       <div class="input-text">
@@ -86,6 +101,8 @@
       <p>
         Desenvolvido por: 
         <a href="https://github.com/maiconm"> Maicon Andraski</a>
+        e
+        <a href="https://github.com/robertokondo8496"> Roberto Kondo</a>
         - 2020
       </p>
     </footer>

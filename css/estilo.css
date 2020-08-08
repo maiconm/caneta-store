@@ -15,6 +15,10 @@ body {
   padding-top: 100px;
 }
 
+header a.icon {
+  display: none;
+}
+
 header {
   top: 0;
   left: 0;
@@ -33,7 +37,6 @@ header img {
   max-width: 50px;
   width: 100%;
   height: auto;
-  box-shadow: -2px 3px 23px 0px white;
 }
 
 .nav-link {color: white}
@@ -60,6 +63,28 @@ footer {
 
 footer a {
   color: white;
+}
+
+.slider{
+  width: 80%;
+  height: 500px;
+  background-image: url('../img/caneta3.jpg');
+  background-size: cover;
+  font-size: 35px;
+  color: #333;
+}
+
+.fa-chevron-left{
+  margin-top: 200px;
+  margin-left: 2%;
+  opacity: 0.3;
+}
+
+.fa-chevron-right{
+  float: right;
+  margin-top: 200px;
+  margin-right: 2%;
+  opacity: 0.3;
 }
 
 .features {
@@ -94,14 +119,52 @@ em {text-align: end}
   }
 
   header {
-    align-items: center;
+    overflow: hidden;
     padding: 0;
     flex-direction: column;
     text-align: center;
     width: 100%;
   }
 
-  header img {margin: 5px 0 0 0}
+  header a.icon {
+    color: grey;
+    margin: 5px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header img {
+    margin: 5px;
+    display: block;
+  }
+
+  .slider{
+    width: 80%;
+    height: 200px;
+    background-image: url('../img/caneta3.jpg');
+    background-size: cover;
+    font-size: 35px;
+    color: #333;
+  }
+
+  .fa-chevron-left{
+    margin-top: 85px;
+    margin-left: 2%;
+    opacity: 0.3;
+  }
+  
+  .fa-chevron-right{
+    float: right;
+    margin-top: 85px;
+    margin-right: 2%;
+    opacity: 0.3;
+  }  
 
   nav ul {flex-direction: column}
 

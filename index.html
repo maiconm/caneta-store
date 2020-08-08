@@ -5,7 +5,7 @@
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-    />  
+    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -15,17 +15,21 @@
       type="text/css"
       href="css/estilo.css"
     >
+    <!-- Adiciona script slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script defer src="js/navbar.js"></script>
     <title>Caneta Store</title>
 </head>
 <body>
   <div class="page-wrapper">
     <header>
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yws46KFbH83peqnTL2TFBCgqOx4YfwZ6mCmfQ1AyFTuBMcWS8g"
-        alt="pen image"
+        src="assets/fountain-pen.svg"
+        alt="pen svg"
         width="200px"
       >
-      <nav>
+      <nav id="links">
         <ul>
           <li>
             <a
@@ -46,6 +50,14 @@
           <li>
             <a
               class="nav-link"
+              href="localizacao.html"
+            >
+              Localização
+            </a>
+          </li>          
+          <li>
+            <a
+              class="nav-link"
               href="contato.html"
             >
               Contato
@@ -53,7 +65,20 @@
           </li>
         </ul>
       </nav>
+      <a
+        href="javascript:void(0);"
+        class="icon" onclick="toggleMenu()"
+      >
+        <em class="fa fa-bars fa-3x"></em>
+      </a>
     </header>
+
+    <div class="slider">
+      <i class="fa fa-chevron-left"></i>
+      <i class="fa fa-chevron-right"></i>
+
+    </div>
+
     <div class="features">
       <h1>Compre suas caneta aqui</h1>
       <div class="feature">
@@ -89,6 +114,8 @@
       <p>
         Desenvolvido por: 
         <a href="https://github.com/maiconm"> Maicon Andraski</a>
+        e
+        <a href="https://github.com/robertokondo8496"> Roberto Kondo</a>
         - 2020
       </p>
     </footer>

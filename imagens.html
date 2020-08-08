@@ -20,6 +20,7 @@
     type="text/css"
     href="css/animacao-imagem.css"
   >
+  <script defer src="js/navbar.js"></script>
   <script defer src="js/imagens.js"></script>
   <title>Caneta Store - imagens</title>
 </head>
@@ -27,11 +28,11 @@
   <div class="page-wrapper">
     <header>
       <img
-        data-lazy="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yws46KFbH83peqnTL2TFBCgqOx4YfwZ6mCmfQ1AyFTuBMcWS8g"
-        alt="pen image"
+        data-lazy="assets/fountain-pen.svg"
+        alt="pen svg"
         width="200px"
       >
-        <nav>
+        <nav id="links">
           <ul>
             <li>
               <a
@@ -52,6 +53,14 @@
             <li>
               <a
                 class="nav-link"
+                href="localizacao.html"
+              >
+                Localização
+              </a>
+            </li>            
+            <li>
+              <a
+                class="nav-link"
                 href="contato.html"
               >
                 Contato
@@ -59,6 +68,12 @@
             </li>
           </ul>
         </nav>
+        <a
+          href="javascript:void(0);"
+          class="icon" onclick="toggleMenu()"
+        >
+          <em class="fa fa-bars fa-3x"></em>
+        </a>
     </header>
     <h1>Carregamento de imagens com lazy loading</h1>
     <p><a href="https://fireship.io/snippets/intersection-observer-lazy-load-images/">👉 referência</a></p>
@@ -178,6 +193,8 @@
       <p>
         Desenvolvido por: 
         <a href="https://github.com/maiconm"> Maicon Andraski</a>
+        e
+        <a href="https://github.com/robertokondo8496"> Roberto Kondo</a>
         - 2020
       </p>
     </footer>
